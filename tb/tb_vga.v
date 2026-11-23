@@ -114,7 +114,8 @@ module tb_vga;
         // ---- pattern spot checks ----
         check_rgb(10'd0,   10'd0,   1'b1, 2'd0, 12'hFFF);  // white bar
         check_rgb(10'd100, 10'd50,  1'b1, 2'd0, 12'hFF0);  // yellow bar
-        check_rgb(10'd500, 10'd50,  1'b1, 2'd0, 12'hF00);  // red bar
+        check_rgb(10'd450, 10'd50,  1'b1, 2'd0, 12'hF00);  // red bar
+        check_rgb(10'd500, 10'd50,  1'b1, 2'd0, 12'h00F);  // blue bar
         check_rgb(10'd639, 10'd479, 1'b1, 2'd0, 12'h000);  // black bar
         check_rgb(10'd100, 10'd50,  1'b0, 2'd0, 12'h000);  // blanking
         check_rgb(10'd0,   10'd0,   1'b1, 2'd1, 12'h126);  // checker square
